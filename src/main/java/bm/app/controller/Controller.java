@@ -18,8 +18,19 @@ public class Controller {
         return "/landingpage";
     }
 
-    @RequestMapping(value = "/choosingseat", method = RequestMethod.GET)
-    public String choosingSeat(){
+    @RequestMapping(value = "/choosingseat", method = RequestMethod.POST)
+    public String getToChoosingSeatHtml(){
         return "/choosingseat";
     }
+
+    @RequestMapping(value = "/bookedseats", method = RequestMethod.POST)
+    public String getToBookedSeatsHtmls(){
+        return "/bookedseats";
+    }
+
+    @RequestMapping(value = "/complaint", method = RequestMethod.POST)
+    public String getToComplaintHtml(){
+        return "/complaint";
+    }
+
 }

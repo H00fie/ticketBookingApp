@@ -7,9 +7,18 @@
 <body>
 <div id="header">Welcome to the best tickets' booking website in the history of existence.</div>
 <div class="subheader">Please, select the desired option below.</div>
-<input type="submit" value="Book the ticket">
-<input type="submit" value="Check booked tickets">
-<input type="submit" value="File a complaint">
+
+<form action="/choosingseat" method="post">
+    <input type="submit" value="Book the ticket">
+</form>
+
+<form action="/bookedseats" method="post">
+    <input type="submit" value="Check booked tickets">
+</form>
+
+<form action="/complaint" method="post">
+    <input type="submit" value="File a complaint">
+</form>
 
 </body>
 </html>
