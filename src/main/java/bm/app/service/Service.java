@@ -2,12 +2,8 @@ package bm.app.service;
 
 public class Service {
 
-//    public String reserveSeat(){
-//
-//    }
-//
-//    public double calculatePrice(){
-//
+//    public int calculateCost(int seatNumber){
+//        if ()
 //    }
 
 
