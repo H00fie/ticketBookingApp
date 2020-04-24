@@ -17,34 +17,33 @@ import static bm.app.config.Constans.*;
 public class CustomerService {
 
 
-
-    private Connection getConnection(){
+    private Connection getConnection() {
         Connection connection = Connections.createConnection(DEFAULT_DRIVER, DEFAULT_URL, DEFAULT_USERNAME, DEFAULT_PASSWORD);
 
-        if (connection == null){
+        if (connection == null) {
             return null;
         }
 
         return connection;
     }
 
-    public boolean insert(Customer customer){
-        String sql ="insert into tickets values(?, ?, ?, ?)";
-        try (final PreparedStatement preparedStatement = getConnection().prepareStatement(sql)){
+    public boolean insert(Customer customer) {
+        String sql = "insert into tickets (name, email, tickettype, seatnumber) values(?, ?, ?, ?)";
+        try (final PreparedStatement preparedStatement = getConnection().prepareStatement(sql)) {
             preparedStatement.setString(1, customer.getName());
             preparedStatement.setString(2, customer.getEmail());
             preparedStatement.setString(3, customer.getTicketType());
             preparedStatement.setInt(4, customer.getSeatnumber());
             preparedStatement.executeUpdate();
-        } catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
         return true;
     }
 
-    public List<Customer> selectAll(){
-        String sql ="select id, name, email, tickettype from tickets";
+    public List<Customer> selectAll() {
+        String sql = "select name, email, tickettype, seatnumber from tickets";
         List<Customer> customers = new ArrayList<>();
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
@@ -52,12 +51,12 @@ public class CustomerService {
         try {
             preparedStatement = getConnection().prepareStatement(sql);
             resultSet = preparedStatement.executeQuery();
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
         try {
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 Customer customer = new Customer();
                 customer.setId(resultSet.getInt("id"));
                 customer.setName(resultSet.getString("name"));
@@ -65,41 +64,131 @@ public class CustomerService {
                 customer.setTicketType(resultSet.getString("tickettype"));
                 customers.add(customer);
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             close(resultSet);
             close(preparedStatement);
         }
         return customers;
     }
 
-    private static void close(Connection connection){
+    public Customer getCustomerByEmail(String email) {
+        Customer customer = new Customer();
+        String sql = "select name, tickettype, seatnumber, id from tickets where email = ?;";
+        PreparedStatement preparedStatement;
+        ResultSet resultSet;
+
         try {
-            if (connection != null){
+            preparedStatement = getConnection().prepareStatement(sql);
+            preparedStatement.setString(1, email);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                customer.setName(resultSet.getString("name"));
+                customer.setTicketType(resultSet.getString("tickettype"));
+                customer.setSeatnumber(resultSet.getInt("seatnumber"));
+                customer.setId(resultSet.getInt("id"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return customer;
+
+
+    }
+
+    public Customer getCustomerByName(String name) {
+        Customer customer = new Customer();
+        String sql = "select email, tickettype, seatnumber, id from tickets where name = ?;";
+        PreparedStatement preparedStatement;
+        ResultSet resultSet;
+
+        try {
+            preparedStatement = getConnection().prepareStatement(sql);
+            preparedStatement.setString(1, name);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                customer.setEmail(resultSet.getString("email"));
+                customer.setTicketType(resultSet.getString("tickettype"));
+                customer.setSeatnumber(resultSet.getInt("seatnumber"));
+                customer.setId(resultSet.getInt("id"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return customer;
+    }
+
+    public int getId(String name) {
+        String sql = "select id from tickets where name = ?;";
+        PreparedStatement preparedStatement;
+        ResultSet resultSet;
+        int extractedId = 0;
+
+        try {
+            preparedStatement = getConnection().prepareStatement(sql);
+            preparedStatement.setString(1, name);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                extractedId = resultSet.getInt("id");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return 0;
+        }
+        return extractedId;
+    }
+
+    public Customer getCustomerById(int id) {
+        Customer customer = new Customer();
+        String sql = "select name, email, tickettype, seatnumber from tickets where id = ?;";
+        PreparedStatement preparedStatement;
+        ResultSet resultSet;
+
+        try {
+            preparedStatement = getConnection().prepareStatement(sql);
+            preparedStatement.setInt(1, id);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                customer.setEmail(resultSet.getString("email"));
+                customer.setTicketType(resultSet.getString("tickettype"));
+                customer.setSeatnumber(resultSet.getInt("seatnumber"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return customer;
+    }
+
+    private static void close(Connection connection) {
+        try {
+            if (connection != null) {
                 connection.close();
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    private static void close(ResultSet resultSet){
+    private static void close(ResultSet resultSet) {
         try {
-            if (resultSet != null){
+            if (resultSet != null) {
                 resultSet.close();
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
-    private static void close(PreparedStatement preparedStatement){
+    private static void close(PreparedStatement preparedStatement) {
         try {
-            if (preparedStatement != null){
+            if (preparedStatement != null) {
                 preparedStatement.close();
             }
-        }catch (SQLException e){
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }

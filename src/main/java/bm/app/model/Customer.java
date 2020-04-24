@@ -6,14 +6,14 @@ public class Customer {
     private String name;
     private String email;
     private String ticketType;
-    private int seatnumber;
+    private int seatNumber;
 
     public int getSeatnumber() {
-        return seatnumber;
+        return seatNumber;
     }
 
     public void setSeatnumber(int seatnumber) {
-        this.seatnumber = seatnumber;
+        this.seatNumber = seatnumber;
     }
 
     public int getId() {
@@ -55,7 +55,7 @@ public class Customer {
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", ticketType='" + ticketType + '\'' +
-                ", seatnumber=" + seatnumber +
+                ", seatnumber=" + seatNumber +
                 '}';
     }
 }

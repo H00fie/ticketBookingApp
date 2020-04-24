@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="header">The result is:</div>
+        <div th:text="'For name: ' + ${name}"/>
+        <div th:text="'Email is: ' + ${email}"/>
+        <div th:text="'Tickets type is: ' + ${tickettype}"/>
+        <div th:text="'Seats number is: ' + ${seatnumber}"/>
+        <div th:text="'ID is: ' + ${id}"/>
+
+    <a href="/landingpage">Return to the first page.</a>
+
+</body>
+</html>
