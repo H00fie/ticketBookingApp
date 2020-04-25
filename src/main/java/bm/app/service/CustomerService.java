@@ -42,6 +42,8 @@ public class CustomerService {
         return true;
     }
 
+
+
     public List<Customer> selectAll() {
         String sql = "select name, email, tickettype, seatnumber from tickets";
         List<Customer> customers = new ArrayList<>();
