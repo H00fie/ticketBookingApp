@@ -126,6 +126,41 @@ public class Controller {
 
     }
 
+    @RequestMapping(value = "removeById", method = RequestMethod.POST)
+    public String removingRecord(){
+        return "removeById";
+    }
+
+    @RequestMapping(value = "removedRecord", method = RequestMethod.POST)
+    public String removedARecord(@RequestParam int id,
+                                Model model){
+        Customer customer = customerService.getCustomerById(id);
+        model.addAttribute("name", customer.getName());
+        model.addAttribute("email", customer.getEmail());
+        model.addAttribute("tickettype", customer.getTicketType());
+        model.addAttribute("seatnumber", customer.getSeatnumber());
+        customerService.deleteById(id);
+        model.addAttribute("id", id);
+        return "removedRecord";
+    }
+
+    @RequestMapping(value = "updateEmailById", method = RequestMethod.POST)
+    public String updatingRecord(){
+        return "updateEmailById";
+    }
+
+    @RequestMapping(value = "emailUpdateResult", method = RequestMethod.POST)
+    public String emailUpdateResult(@RequestParam int id,
+                                    @RequestParam String email,
+                                    Model model){
+        Customer customer = customerService.getCustomerById(id);
+        model.addAttribute("foundEmail", customer.getEmail());
+        customerService.updateEmail(id, email);
+        model.addAttribute("id", id);
+        model.addAttribute("email", email);
+        return "emailUpdateResult";
+    }
+
 
 
     @RequestMapping(value = "/complaint", method = RequestMethod.POST)

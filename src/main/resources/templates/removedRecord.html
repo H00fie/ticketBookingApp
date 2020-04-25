@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="header">Cancelling the reservation.</div>
+<div>--------------------</div>
+<div th:text="'Reservation assigned to ID number ' + ${id} + ' has been cancelled.'"/>
+<div>--------------------</div>
+<div class="subheader">The data of the removed reservation:</div>
+<div th:text="'Name: ' + ${name}"/>
+<div th:text="'Email: ' + ${email}"/>
+<div th:text="'Tickets type: ' + ${tickettype}"/>
+<div th:text="'Seats number: ' + ${seatnumber}"/>
+
+<a href="/landingpage">Return to the first page.</a>
+</body>
+</html>

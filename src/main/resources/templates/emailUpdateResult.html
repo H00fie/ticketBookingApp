@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:text="'The email address of the reservation ID number: ' + ${id} + ' has been changed.'"/>
+<div>--------------------</div>
+<div th:text="'The old email was: ' + ${foundEmail}"/>
+<div>--------------------</div>
+<div th:text="'The new email is: ' + ${email}"/>
+
+</body>
+</html>

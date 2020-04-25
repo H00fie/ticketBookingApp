@@ -154,6 +154,7 @@ public class CustomerService {
             preparedStatement.setInt(1, id);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
+                customer.setName(resultSet.getString("name"));
                 customer.setEmail(resultSet.getString("email"));
                 customer.setTicketType(resultSet.getString("tickettype"));
                 customer.setSeatnumber(resultSet.getInt("seatnumber"));
@@ -163,6 +164,35 @@ public class CustomerService {
             return null;
         }
         return customer;
+    }
+
+    public boolean deleteById(int id){
+        String sql = "delete from tickets where id = ?";
+        try (final PreparedStatement preparedStatement = getConnection().prepareStatement(sql)){
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
+        return true;
+    }
+
+    public boolean updateEmail(int id, String email){
+        Customer customer = getCustomerById(id);
+        String sql = "update tickets set email = ? where id = ?";
+        PreparedStatement preparedStatement;
+        ResultSet resultSet;
+        try {
+            preparedStatement = getConnection().prepareStatement(sql);
+            preparedStatement.setString(1, email);
+            preparedStatement.setInt(2, id);
+            preparedStatement.executeUpdate();
+        }catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
+        return true;
     }
 
     private static void close(Connection connection) {
