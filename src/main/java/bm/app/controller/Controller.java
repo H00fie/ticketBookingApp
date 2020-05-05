@@ -180,8 +180,24 @@ public class Controller {
         return "/complaint";
     }
 
+    @RequestMapping(value = "complaintTicket", method = RequestMethod.POST)
+    public String lostTicketComplaint(){
+        return "complaintTicket";
+    }
+
+    @RequestMapping(value = "complaintTicketResult", method = RequestMethod.POST)
+    public String lostTicketComplaintResult(@RequestParam int id,
+                                            @RequestParam String content,
+                                            Model model){
+        customerService.insertLostTicketComplaint(id, content);
+
+        model.addAttribute("id", id);
+        model.addAttribute("email", customerService.getEmailById(id));
+        return "complaintTicketResult";
+    }
+
     @RequestMapping(value = "/showAllComplaints", method = RequestMethod.POST)
-    public String showAllComplaints(Model model){
+    public String showAllComplaints(Model model) {
         List<Complaint> complaintList = customerService.selectAllComplaints();
         model.addAttribute("complaintList", complaintList);
         return "showAllComplaints";

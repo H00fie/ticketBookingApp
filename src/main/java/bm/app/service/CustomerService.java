@@ -171,6 +171,26 @@ public class CustomerService {
         return customer;
     }
 
+    public String getEmailById(int id){
+        String sql = "select email from tickets where id = ?;";
+        PreparedStatement preparedStatement;
+        ResultSet resultSet;
+        String email = null;
+
+        try {
+            preparedStatement = getConnection().prepareStatement(sql);
+            preparedStatement.setInt(1, id);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                email = resultSet.getString("email");
+            }
+        }catch (SQLException e){
+            e.printStackTrace();
+            return null;
+        }
+        return email;
+    }
+
     public boolean deleteById(int id){
         String sql = "delete from tickets where id = ?";
         try (final PreparedStatement preparedStatement = getConnection().prepareStatement(sql)){
@@ -230,6 +250,11 @@ public class CustomerService {
         }
     }
 
+    /**
+     *  Below are hibernate-bound methods.
+     * @return
+     */
+
     public List<Complaint> selectAllComplaints(){
         SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 
@@ -239,4 +264,28 @@ public class CustomerService {
         transaction.commit();
         return  customersComplaints;
     }
+
+    public boolean insertLostTicketComplaint(int id, String content){
+        Complaint complaint = new Complaint();
+        complaint.setId(id);
+        complaint.setType("Lost ticket.");
+        complaint.setContent(content);
+
+        Transaction transaction = null;
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        try (Session session = sessionFactory.openSession()){
+            transaction = session.beginTransaction();
+            session.save(complaint);
+            transaction.commit();
+
+        }catch (Exception e){
+            if (transaction != null){
+                transaction.rollback();
+            }
+            return false;
+        }
+        return true;
+    }
+
+
 }

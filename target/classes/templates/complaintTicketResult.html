@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:text="'A new complaint has been recorded for ID: ' + ${id}"/>
+<div class="subheader">--------------------</div>
+<div th:text="'Instructions with all the steps to take next will be sent to email: ' + ${email}"/>
+<div>If the email is not a correct one, please consider updating it via a proper option in the application.</div>
+</body>
+</html>
