@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bc82f51-b646-4632-b57d-440d4f595709" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/config/Connections.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/config/Connections.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/model/Complaint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/model/Complaint.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/model/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/service/EmergencyService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/service/EmergencyService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/service/HibernateCustomerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +145,7 @@
       <workItem from="1588434125879" duration="979000" />
       <workItem from="1588590831952" duration="5096000" />
       <workItem from="1588607246016" duration="7802000" />
-      <workItem from="1588632572415" duration="10182000" />
+      <workItem from="1588632572415" duration="12070000" />
     </task>
     <servers />
   </component>
