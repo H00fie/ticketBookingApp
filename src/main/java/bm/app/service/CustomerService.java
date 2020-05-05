@@ -1,7 +1,12 @@
 package bm.app.service;
 
 import bm.app.config.Connections;
+import bm.app.model.Complaint;
 import bm.app.model.Customer;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
 import org.springframework.stereotype.Service;
 
 import java.sql.Connection;
@@ -223,5 +228,15 @@ public class CustomerService {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public List<Complaint> selectAllComplaints(){
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        List<Complaint> customersComplaints = session.createQuery("from Complaint ", Complaint.class).list();
+        transaction.commit();
+        return  customersComplaints;
     }
 }

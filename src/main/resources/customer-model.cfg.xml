@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-mapping xmlns="http://www.hibernate.org/xsd/hibernate-mapping">
+    <class name="bm.app.model.Complaint" table="complaints">
+        <meta attribute="class-description">This is an exemplary class Customer</meta>
+
+        <id name="id" type="java.lang.Integer" column="id"/>
+        <property name="type" type="java.lang.String" column="type"/>
+        <property name="content" type="java.lang.String" column="content"/>
+
+
+    </class>
+</hibernate-mapping>
+

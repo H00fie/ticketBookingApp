@@ -7,6 +7,23 @@ public class Customer {
     private String email;
     private String ticketType;
     private int seatNumber;
+    private String complaintType;
+
+    public int getSeatNumber() {
+        return seatNumber;
+    }
+
+    public void setSeatNumber(int seatNumber) {
+        this.seatNumber = seatNumber;
+    }
+
+    public String getComplaintType() {
+        return complaintType;
+    }
+
+    public void setComplaintType(String complaintType) {
+        this.complaintType = complaintType;
+    }
 
     public int getSeatnumber() {
         return seatNumber;
@@ -55,7 +72,8 @@ public class Customer {
                 ", name='" + name + '\'' +
                 ", email='" + email + '\'' +
                 ", ticketType='" + ticketType + '\'' +
-                ", seatnumber=" + seatNumber +
+                ", seatNumber=" + seatNumber +
+                ", complaintType='" + complaintType + '\'' +
                 '}';
     }
 }

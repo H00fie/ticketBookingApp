@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bc82f51-b646-4632-b57d-440d4f595709" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/bookedseats.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/bookedseats.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/choosingseat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/choosingseat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/results.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/bookedseats.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/bookedseats.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/complaint.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/complaint.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/emailUpdateResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/emailUpdateResult.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/landingpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/landingpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/complaint.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/complaint.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/emailUpdateResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/emailUpdateResult.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +49,6 @@
         <item name="reservations@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="reservations: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="reservations@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="reservations: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tickets: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -95,11 +92,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../chuju" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -146,7 +143,12 @@
       <workItem from="1587498016446" duration="1184000" />
       <workItem from="1587580881443" duration="1968000" />
       <workItem from="1587655937220" duration="25231000" />
-      <workItem from="1587821029405" duration="13069000" />
+      <workItem from="1587821029405" duration="19639000" />
+      <workItem from="1587999036595" duration="2376000" />
+      <workItem from="1588434125879" duration="979000" />
+      <workItem from="1588590831952" duration="5096000" />
+      <workItem from="1588607246016" duration="7802000" />
+      <workItem from="1588632572415" duration="8914000" />
     </task>
     <servers />
   </component>
@@ -154,6 +156,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="77" key="#Assign_Data_Sources" timestamp="1588608022173">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="77" key="#Assign_Data_Sources/0.0.1536.834@0.0.1536.834" timestamp="1588608022173" />
+    <state x="361" y="77" key="#Inspections" timestamp="1588607429111">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="77" key="#Inspections/0.0.1536.834@0.0.1536.834" timestamp="1588607429111" />
+    <state x="361" y="77" key="#Notifications" timestamp="1588618944316">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="77" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1588618944316" />
     <state x="722" y="80" key="#Project_Structure" timestamp="1584220129275">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -162,54 +176,54 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="77" key="#SQL_Dialects/0.0.1536.834@0.0.1536.834" timestamp="1587657501147" />
-    <state x="450" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587151117754">
+    <state x="579" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588619265111">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="450" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1587151117754" />
-    <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser" timestamp="1587417186162">
+    <state x="579" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1588619265111" />
+    <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser" timestamp="1588618387275">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1587417186162" />
+    <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1588618387275" />
     <state x="618" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584218758249">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="618" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1584218758249" />
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1587750522007">
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1588606673219">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1587750522007" />
-    <state width="1493" height="283" key="GridCell.Tab.0.bottom" timestamp="1587848375209">
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1588606673219" />
+    <state width="1493" height="283" key="GridCell.Tab.0.bottom" timestamp="1588689012306">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1587848375209" />
-    <state width="1493" height="283" key="GridCell.Tab.0.center" timestamp="1587848375209">
+    <state width="1493" height="283" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588689012306" />
+    <state width="1493" height="283" key="GridCell.Tab.0.center" timestamp="1588689012306">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1587848375209" />
-    <state width="1493" height="283" key="GridCell.Tab.0.left" timestamp="1587848375209">
+    <state width="1493" height="283" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588689012306" />
+    <state width="1493" height="283" key="GridCell.Tab.0.left" timestamp="1588689012306">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1587848375209" />
-    <state width="1493" height="283" key="GridCell.Tab.0.right" timestamp="1587848375209">
+    <state width="1493" height="283" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588689012306" />
+    <state width="1493" height="283" key="GridCell.Tab.0.right" timestamp="1588689012306">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1587848375209" />
+    <state width="1493" height="283" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588689012306" />
     <state width="201" height="457" key="HiddenNamespacesPopup" timestamp="1587151190440">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="201" height="457" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1587151190440" />
-    <state x="421" y="40" key="SettingsEditor" timestamp="1586978306846">
+    <state x="241" y="109" key="SettingsEditor" timestamp="1588607147270">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="421" y="40" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1586978306846" />
+    <state x="241" y="109" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1588607147270" />
     <state x="485" y="60" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587763274832">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="485" y="60" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1587763274832" />
-    <state x="650" y="341" key="com.intellij.ide.util.TipDialog" timestamp="1587656487985">
+    <state x="650" y="341" key="com.intellij.ide.util.TipDialog" timestamp="1588633689511">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="650" y="341" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1587656487985" />
+    <state x="650" y="341" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1588633689511" />
     <state x="0" y="78" key="new project wizard" timestamp="1587380583914">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -220,7 +234,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/bm/app/controller/Controller.java</url>
-          <line>95</line>
+          <line>108</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
