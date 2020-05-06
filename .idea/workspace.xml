@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bc82f51-b646-4632-b57d-440d4f595709" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/bookedseats.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/bookedseats.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/choosingseat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/choosingseat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/complaint.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/complaint.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/complaintTicketResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/complaintTicketResult.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bm/app/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/controller/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/bookedseats.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/bookedseats.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/choosingseat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/choosingseat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/complaint.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/complaint.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/complaintTicketResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/complaintTicketResult.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +148,7 @@
       <workItem from="1588590831952" duration="5096000" />
       <workItem from="1588607246016" duration="7802000" />
       <workItem from="1588632572415" duration="13524000" />
-      <workItem from="1588790207909" duration="4603000" />
+      <workItem from="1588790207909" duration="9651000" />
     </task>
     <servers />
   </component>
@@ -201,22 +192,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1588689613212" />
-    <state width="1493" height="283" key="GridCell.Tab.0.bottom" timestamp="1588797970608">
+    <state width="1493" height="283" key="GridCell.Tab.0.bottom" timestamp="1588805268699">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588797970608" />
-    <state width="1493" height="283" key="GridCell.Tab.0.center" timestamp="1588797970608">
+    <state width="1493" height="283" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588805268699" />
+    <state width="1493" height="283" key="GridCell.Tab.0.center" timestamp="1588805268698">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588797970608" />
-    <state width="1493" height="283" key="GridCell.Tab.0.left" timestamp="1588797970608">
+    <state width="1493" height="283" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588805268698" />
+    <state width="1493" height="283" key="GridCell.Tab.0.left" timestamp="1588805268698">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588797970608" />
-    <state width="1493" height="283" key="GridCell.Tab.0.right" timestamp="1588797970608">
+    <state width="1493" height="283" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588805268698" />
+    <state width="1493" height="283" key="GridCell.Tab.0.right" timestamp="1588805268698">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588797970608" />
+    <state width="1493" height="283" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588805268698" />
     <state width="201" height="457" key="HiddenNamespacesPopup" timestamp="1587151190440">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -237,6 +228,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="0" y="78" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1587380583914" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1588800193316">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1588800193316" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

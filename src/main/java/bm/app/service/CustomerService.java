@@ -7,6 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 import org.springframework.stereotype.Service;
 
 import java.sql.Connection;
@@ -263,6 +264,18 @@ public class CustomerService {
         List<Complaint> customersComplaints = session.createQuery("from Complaint ", Complaint.class).list();
         transaction.commit();
         return  customersComplaints;
+    }
+
+    public Complaint selectAComplaintById(int id){
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        Query query = session.createQuery("from Complaint c where c.id = :id");
+        query.setParameter("id", id);
+        transaction.commit();
+        return (Complaint) query.getResultList().get(0);
+
     }
 
     public boolean insertLostTicketComplaint(int id, String content){

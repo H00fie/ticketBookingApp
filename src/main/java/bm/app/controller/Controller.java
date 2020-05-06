@@ -226,6 +226,21 @@ public class Controller {
         return "complaintSearchMalfunctionalResult";
     }
 
+    @RequestMapping(value = "showMyComplaints", method = RequestMethod.POST)
+    public String showMyComplaints(){
+        return "showMyComplaints";
+    }
+
+    @RequestMapping(value = "showMyComplaintsResult", method = RequestMethod.POST)
+    public String showMyComplaintsResult(@RequestParam int id,
+                                         Model model){
+
+        Complaint complaint = customerService.selectAComplaintById(id);
+        model.addAttribute("id", id);
+        model.addAttribute("complaint", complaint);
+        return "showMyComplaintsResult";
+    }
+
     @RequestMapping(value = "/showAllComplaints", method = RequestMethod.POST)
     public String showAllComplaints(Model model) {
         List<Complaint> complaintList = customerService.selectAllComplaints();
