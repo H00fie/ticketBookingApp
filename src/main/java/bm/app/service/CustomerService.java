@@ -287,5 +287,49 @@ public class CustomerService {
         return true;
     }
 
+    public boolean insertDidntReceiveDetailsComplaint(int id, String content){
+        Complaint complaint = new Complaint();
+        complaint.setId(id);
+        complaint.setType("Details not received.");
+        complaint.setContent(content);
+
+        Transaction transaction = null;
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        try (Session session = sessionFactory.openSession()){
+            transaction = session.beginTransaction();
+            session.save(complaint);
+            transaction.commit();
+
+        }catch (Exception e){
+            if (transaction != null){
+                transaction.rollback();
+            }
+            return false;
+        }
+        return true;
+    }
+
+    public boolean insertSearchEngineComplaint(int id, String content){
+        Complaint complaint = new Complaint();
+        complaint.setId(id);
+        complaint.setType("Search engine malfunctional.");
+        complaint.setContent(content);
+
+        Transaction transaction = null;
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        try (Session session = sessionFactory.openSession()){
+            transaction = session.beginTransaction();
+            session.save(complaint);
+            transaction.commit();
+
+        }catch (Exception e){
+            if (transaction != null){
+                transaction.rollback();
+            }
+            return false;
+        }
+        return true;
+    }
+
 
 }

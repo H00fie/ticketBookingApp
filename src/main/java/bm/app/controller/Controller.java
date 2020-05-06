@@ -181,14 +181,14 @@ public class Controller {
     }
 
     @RequestMapping(value = "complaintTicket", method = RequestMethod.POST)
-    public String lostTicketComplaint(){
+    public String lostTicketComplaint() {
         return "complaintTicket";
     }
 
     @RequestMapping(value = "complaintTicketResult", method = RequestMethod.POST)
     public String lostTicketComplaintResult(@RequestParam int id,
                                             @RequestParam String content,
-                                            Model model){
+                                            Model model) {
         customerService.insertLostTicketComplaint(id, content);
 
         model.addAttribute("id", id);
@@ -196,10 +196,45 @@ public class Controller {
         return "complaintTicketResult";
     }
 
+    @RequestMapping(value = "complaintFlightsDetails", method = RequestMethod.POST)
+    public String lackOfDetailsComplaint(){
+        return "complaintFlightsDetails";
+    }
+
+    @RequestMapping(value = "complaintFlightsDetailsResult", method = RequestMethod.POST)
+    public String lackOfDetailsComplaintResult(@RequestParam int id,
+                                               @RequestParam String content,
+                                               Model model){
+        customerService.insertDidntReceiveDetailsComplaint(id, content);
+        model.addAttribute("id", id);
+        model.addAttribute("email", customerService.getEmailById(id));
+        return "complaintFlightsDetailsResult";
+    }
+
+    @RequestMapping(value = "complaintSearchMalfunctional", method = RequestMethod.POST)
+    public String searchEngineComplaint(){
+        return "complaintSearchMalfunctional";
+    }
+
+    @RequestMapping(value = "complaintSearchMalfunctionalResult", method = RequestMethod.POST)
+    public String searchEngineComplaintResult(@RequestParam int id,
+                                              @RequestParam String content,
+                                              Model model){
+        customerService.insertSearchEngineComplaint(id, content);
+        model.addAttribute("id", id);
+        model.addAttribute("email", customerService.getEmailById(id));
+        return "complaintSearchMalfunctionalResult";
+    }
+
     @RequestMapping(value = "/showAllComplaints", method = RequestMethod.POST)
     public String showAllComplaints(Model model) {
         List<Complaint> complaintList = customerService.selectAllComplaints();
+
         model.addAttribute("complaintList", complaintList);
+
+
+        // TODO możesz zrobić iterację po liście w thymeleafie chyba... Tutaj TRZEBA zrobić iterację w thymeleafie
+
         return "showAllComplaints";
 
     }
