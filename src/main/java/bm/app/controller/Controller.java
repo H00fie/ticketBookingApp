@@ -18,15 +18,12 @@ public class Controller {
 
     CustomerService customerService;
 
-//    HibernateCustomerService hibernateCustomerService;
 
     private Controller(CustomerService customerService) {
         this.customerService = customerService;
     }
 
-//    private Controller(HibernateCustomerService hibernateCustomerService){
-//        this.hibernateCustomerService = hibernateCustomerService;
-//    }
+
 
 
     @RequestMapping(value = "/landingpage", method = RequestMethod.GET)

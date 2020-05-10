@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bc82f51-b646-4632-b57d-440d4f595709" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__Arquillian_JUnit_Release.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/model/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bm/app/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bm/app/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bm/app/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/model/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/model/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bm/app/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bm/app/service/CustomerService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +64,8 @@
       <list>
         <option value="Class" />
         <option value="HTML File" />
+        <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -84,22 +93,92 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../guessinggame" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bm.app.Main" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="bm.app.model" />
+      <recent name="bm.app.service" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CustomerTest.testObjectCreation">
+    <configuration name="CustomerServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ticketbookingapp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bm.app.*" />
+          <option name="PATTERN" value="bm.app.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="bm.app.service" />
+      <option name="MAIN_CLASS_NAME" value="bm.app.service.CustomerServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceTest.testSelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ticketbookingapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bm.app.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bm.app.service" />
+      <option name="MAIN_CLASS_NAME" value="bm.app.service.CustomerServiceTest" />
+      <option name="METHOD_NAME" value="testSelectAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ticketbookingapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bm.app.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bm.app.model" />
+      <option name="MAIN_CLASS_NAME" value="bm.app.model.CustomerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerTest.testObjectCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ticketbookingapp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bm.app.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bm.app.model" />
+      <option name="MAIN_CLASS_NAME" value="bm.app.model.CustomerTest" />
+      <option name="METHOD_NAME" value="testObjectCreation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test in ticketbookingapp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ticketbookingapp" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,7 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CustomerTest.testObjectCreation" />
+        <item itemvalue="JUnit.CustomerTest" />
+        <item itemvalue="JUnit.test in ticketbookingapp" />
+        <item itemvalue="JUnit.CustomerServiceTest.testSelectAll" />
+        <item itemvalue="JUnit.CustomerServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +231,10 @@
       <workItem from="1588590831952" duration="5096000" />
       <workItem from="1588607246016" duration="7802000" />
       <workItem from="1588632572415" duration="13524000" />
-      <workItem from="1588790207909" duration="9651000" />
+      <workItem from="1588790207909" duration="11677000" />
+      <workItem from="1588959795254" duration="3356000" />
+      <workItem from="1589055218138" duration="7921000" />
+      <workItem from="1589112419513" duration="1462000" />
     </task>
     <servers />
   </component>
@@ -164,6 +250,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="77" key="#Inspections/0.0.1536.834@0.0.1536.834" timestamp="1588607429111" />
+    <state x="361" y="64" width="814" height="770" key="#Intentions" timestamp="1589112245810">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="64" width="814" height="770" key="#Intentions/0.0.1536.834@0.0.1536.834" timestamp="1589112245810" />
     <state x="361" y="77" key="#Notifications" timestamp="1588618944316">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -180,54 +270,82 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="579" y="105" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1588619265111" />
-    <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser" timestamp="1588618387275">
+    <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser" timestamp="1589096415698">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1588618387275" />
+    <state x="574" y="102" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1589096415698" />
     <state x="618" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588792316969">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="618" y="307" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.834@0.0.1536.834" timestamp="1588792316969" />
-    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1588689613212">
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1588962490944">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1588689613212" />
-    <state width="1493" height="283" key="GridCell.Tab.0.bottom" timestamp="1588805268699">
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1588962490944" />
+    <state width="1493" height="283" key="GridCell.Tab.0.bottom" timestamp="1589113906062">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1588805268699" />
-    <state width="1493" height="283" key="GridCell.Tab.0.center" timestamp="1588805268698">
+    <state width="1493" height="283" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1589113906062" />
+    <state width="1493" height="283" key="GridCell.Tab.0.center" timestamp="1589113906062">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1588805268698" />
-    <state width="1493" height="283" key="GridCell.Tab.0.left" timestamp="1588805268698">
+    <state width="1493" height="283" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1589113906062" />
+    <state width="1493" height="283" key="GridCell.Tab.0.left" timestamp="1589113906061">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1588805268698" />
-    <state width="1493" height="283" key="GridCell.Tab.0.right" timestamp="1588805268698">
+    <state width="1493" height="283" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1589113906061" />
+    <state width="1493" height="283" key="GridCell.Tab.0.right" timestamp="1589113906062">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="283" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1588805268698" />
+    <state width="1493" height="283" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1589113906062" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1589113150864">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1589113150864" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1589113150864">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1589113150864" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1589113150864">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1589113150864" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1589113150864">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1589113150864" />
     <state width="201" height="457" key="HiddenNamespacesPopup" timestamp="1587151190440">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="201" height="457" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1587151190440" />
-    <state x="241" y="109" key="SettingsEditor" timestamp="1588607147270">
+    <state x="241" y="109" key="SettingsEditor" timestamp="1589095240217">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="241" y="109" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1588607147270" />
+    <state x="241" y="109" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1589095240217" />
+    <state x="584" y="169" key="chooseDestDirectoryDialog" timestamp="1589112507048">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="584" y="169" key="chooseDestDirectoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1589112507048" />
     <state x="485" y="60" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587763274832">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="485" y="60" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1587763274832" />
-    <state x="650" y="341" key="com.intellij.ide.util.TipDialog" timestamp="1588633689511">
+    <state x="650" y="341" key="com.intellij.ide.util.TipDialog" timestamp="1588962469934">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="650" y="341" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1588633689511" />
+    <state x="650" y="341" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1588962469934" />
+    <state x="533" y="121" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589112507116">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="533" y="121" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.834@0.0.1536.834" timestamp="1589112507116" />
     <state x="0" y="78" key="new project wizard" timestamp="1587380583914">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="0" y="78" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1587380583914" />
+    <state x="511" y="53" key="refactoring.ChangeSignatureDialog" timestamp="1589096502033">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="511" y="53" key="refactoring.ChangeSignatureDialog/0.0.1536.834@0.0.1536.834" timestamp="1589096502033" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1588800193316">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

@@ -3,10 +3,12 @@ package bm.app.service;
 import bm.app.config.Connections;
 import bm.app.model.Complaint;
 import bm.app.model.Customer;
+import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.criterion.Restrictions;
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Service;
 
@@ -344,5 +346,15 @@ public class CustomerService {
         return true;
     }
 
+    public Complaint getComplaintByIdCriteria(int id){
+        SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+        Session session = sessionFactory.openSession();
+        Criteria criteria = session.createCriteria(Complaint.class);
+        return (Complaint) criteria.add(Restrictions.eq("id", id)).list().get(0);
+    }
+
+//    public boolean Complain(){
+//
+//    }
 
 }
